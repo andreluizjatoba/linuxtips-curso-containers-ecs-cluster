@@ -1,1 +1,1 @@
-# linuxtips-curso-ecs-cluster
+# linuxtips-curso-containers-ecs-cluster
