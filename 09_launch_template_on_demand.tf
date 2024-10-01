@@ -1,6 +1,7 @@
 resource "aws_launch_template" "on_demand" {
+  description = "Launch Template Workers On Demand"
   name_prefix = format("%s-on-demand", var.project_name)
-  image_id    = var.node_ami
+  image_id    = local.ami_amazon_linux_ecs_2023
 
   instance_type = var.node_instance_type
 

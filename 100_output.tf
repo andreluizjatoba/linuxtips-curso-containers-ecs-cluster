@@ -13,6 +13,12 @@
 output "load_balancer_dns" {
   value = aws_lb.main.dns_name
 }
+output "Load_balancer_id" {
+  value = aws_lb.main.id
+}
+output "load_balancer_listener_arn" {
+  value = aws_lb_listener.main.arn
+}
 output "ssm_load_balancer_arn" {
   value = aws_ssm_parameter.load_balancer_arn[0].id
 }
